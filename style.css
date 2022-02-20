@@ -90,6 +90,23 @@ h2 {
     margin-top: 20px;
 }
 
+canvas {
+    height: inherit;
+    width: inherit;
+    bottom: 100px;
+}
+
+.confetti-container.on {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+.confetti-container.off {
+    height: 0;
+    width: 0;
+}
+
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
     .game-container {
