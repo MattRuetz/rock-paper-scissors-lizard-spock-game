@@ -121,7 +121,7 @@ const displayComputerChoice = () => {
 }
 
 // Pass player selection and styling icons accordingly
-const select = (playerChoice) => {
+function select(playerChoice) {
 
   checkResult(playerChoice);
 
@@ -156,7 +156,6 @@ var myCanvas = document.createElement('canvas');
 document.getElementById('confetti-container').appendChild(myCanvas);
 
 const launchConfetti = () => {
-  confettiContainer.classList.replace('off', 'on');
   var myConfetti = confetti.create(myCanvas, {
     resize: true,
     useWorker: true
@@ -167,9 +166,6 @@ const launchConfetti = () => {
     spread: 200,
     ticks: 100
   });
-  setTimeout(() => {
-    confettiContainer.classList.replace('on','off');
-  }, 1200);
 }
 
 // set initial vals

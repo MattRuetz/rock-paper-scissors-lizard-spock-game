@@ -96,15 +96,11 @@ canvas {
     bottom: 100px;
 }
 
-.confetti-container.on {
+.confetti-container {
     position: fixed;
     height: 100vh;
     width: 100vw;
-}
-
-.confetti-container.off {
-    height: 0;
-    width: 0;
+    z-index: -1;
 }
 
 /* Media Query: Large Smartphone (Vertical) */
